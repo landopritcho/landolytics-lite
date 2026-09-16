@@ -29,6 +29,3 @@ https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/events/{event_id
 ## Win probability by play:
 https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/events/{event_id}/competitions/{event_id}/probabilities
 - limit
-
-## CDN full game package:
-https://cdn.espn.com/core/nfl/game
