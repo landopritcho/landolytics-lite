@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+._*
+
+# Local Go build
+/landolytics-lite
+/bin/
+/coverage.out
+*.test
+
+# Local configuration
+.env
+.env.*
+!.env.example
