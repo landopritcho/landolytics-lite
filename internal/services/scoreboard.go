@@ -1,13 +1,15 @@
 // =====================================================================================
 // ESPN Scoreboard Interface
 // =====================================================================================
-package landolyticslite
+package services
 
 import (
 	"encoding/json"
 	"fmt"
 	"io"
 	"net/http"
+
+	models "github.com/landopritcho/landolytics-lite/internal/models"
 )
 
 // =====================================================================================
@@ -20,8 +22,8 @@ const scoreboardURL = "https://site.api.espn.com/apis/site/v2/sports/football/nf
 // Public Functions
 // =====================================================================================
 
-func GetNFLScoreboard(date string) (ScoreboardResponse, error) {
-	var scoreboardResponse ScoreboardResponse
+func GetNFLScoreboard(date string) (models.ScoreboardResponse, error) {
+	var scoreboardResponse models.ScoreboardResponse
 	formattedURL := fmt.Sprintf("%s?dates=%s", scoreboardURL, date)
 
 	response, err := http.Get(formattedURL)

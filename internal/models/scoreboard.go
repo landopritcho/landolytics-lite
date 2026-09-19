@@ -1,7 +1,7 @@
 // =====================================================================================
 // Incoming JSON Response Schemas from ESPN API
 // =====================================================================================
-package landolyticslite
+package models
 
 import (
 	"encoding/json"
